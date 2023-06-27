@@ -1,0 +1,11 @@
+body {
+  background: url("https://www.jqueryscript.net/images/Polygonal-Particles-Background-polygonizr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.w-450 {
+  width: 450px;
+}
+.vh-100 {
+  min-height: 100vh;
+}

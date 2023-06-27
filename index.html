@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Onclick and Onload</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+
+<body onload="message('LOAD')" onresize="message('RESIZE')">
+
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="form-group row shadow w-450 p-5" style="background: rgb(255, 255, 255);"><br>
+      <div class="mb-3" style="text-align: center; color: rgb(0, 0, 0);">
+        <h2>JavaScript - onclick and onload</h2>
+        <br>
+        <p onclick="message('CLICK')"><em>"I am a third year college student."</em></p>
+        <p>Click on the paragraph above to trigger an onclick event.<br>Refresh the page to see an onload event</p>
+        <p><strong>Output:</strong></p>
+        <h4 id="output"></h4>
+      </div>
+      <div class="mb-3"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function message(msg) {
+      document.getElementById('output').innerHTML = msg + " event";
+    }
+  </script>
+</body>
+
+</html>
